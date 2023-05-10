@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <div class="container">
+        <video src="Video/Eyes closed.mp4">
+            
+        </video>
+        <div class="wrapper">
+            <div class="progressbar">
+                <div class="child"></div>
+            </div>
+            <div class="controls">
+                <div class="controls-left">
+                    <i class="fa-solid fa-volume-high volumebtn"></i>
+                    <input type="range" min="0" max="1" step="any">
+                    <div class="timer">
+                        <p class="current">00:00</p>
+                        <p>/</p>
+                        <p class="duration">00:00</p>
+                    </div>
+                </div>
+                <div class="controls-center">
+                    <i class="fa-solid fa-backward"></i>
+                    <i class="fa-solid fa-play playbtn"></i>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+               <ul class="speed-option-box">
+                    <li data-speed="2">2x</li>
+                    <li data-speed="1.5">1.5x</li>
+                    <li  data-speed="1" class="active">normal</li>
+                    <li data-speed="0.75">0.75x</li>
+                    <li data-speed="0.5">0.5x</li>
+               </ul>
+                <div class="controls-right">
+                    <i class="fa-solid fa-gauge"></i>
+                    <i class="fa-sharp fa-solid fa-display"></i>
+                    <i class="fa-solid fa-expand"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="video.js"></script>
+</body>
+</html>
